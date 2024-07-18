@@ -1,0 +1,86 @@
+.main-contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    padding-top: 50px;
+    flex-direction: column;
+    /* background-image: url('../assests/contactus-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    box-shadow:
+        0 0 0 2px white,
+        0.3em 0.3em 3em rgba(192, 227, 197, 0.8);
+    z-index: 9;
+    opacity: 0.8;
+}
+
+.contact-container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    width: 500px;
+}
+
+.contact-container form input {
+    padding: 8px;
+    border: #c0bcbc solid 1px;
+    font-size: 1rem;
+    color: #5c5c5c;
+    border-radius: 4px;
+    outline: none;
+    background-color: #ffff;
+}
+
+.contact-container form textarea {
+    padding: 8px;
+    border: #c0bcbc solid 1px;
+    font-size: 1rem;
+    color: #5c5c5c;
+    border-radius: 4px;
+    outline: none;
+    background-color: #ffff;
+}
+
+.contact-container form button {
+    margin-top: 5px;
+    background-image: linear-gradient(to right, #1D7328, #539F22);
+    padding: 12px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.contact-container form button:hover {
+    opacity: 0.9;
+}
+
+.map-info {
+    padding: 20px;
+    align-self: center;
+}

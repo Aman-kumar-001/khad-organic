@@ -1,0 +1,118 @@
+.search-modal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transform: translateY(100%);
+    animation: slideSearchWindow 0.5s ease forwards;
+}
+
+.form-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    position: relative;
+
+}
+
+.form-field input {
+    width: 100%;
+    max-width: 1200px;
+    font-size: 28px;
+    height: 60px;
+    text-align: center;
+    font-weight: 600;
+    color: #212121;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+
+
+}
+
+.cler-btn {
+    position: absolute;
+    right: 40px;
+    font-size: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-result-content {
+    max-width: calc(100vh - 20px);
+    margin: 0 auto;
+    height: 800px;
+}
+
+.search-results {
+    height: calc(100vh - 160px);
+    overflow: auto;
+    margin: 20px 0;
+}
+.search-results::-webkit-scrollbar{
+    display: none;
+}
+.search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.img-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.search-result-item .prod-details {
+    overflow: hidden;
+}
+
+.search-result-item .prod-details .name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-weight: 600;
+    display: block;
+}
+.search-result-item .prod-details .desc {
+    font-size: 14px;
+    line-height: 1;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.5);
+}
+@keyframes slideSearchWindow {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
